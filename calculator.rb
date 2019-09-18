@@ -23,8 +23,8 @@ describe "./calculator.rb" do
   end
 
   it "contains a local variable called difference that is assigned to the result of subtracting first_number and second_number" do
-    first_number = 4 ('./calculator.rb', "first_number")
-    second_number = 5 ('./calculator.rb', "second_number")
+    first_number = 6 ('./calculator.rb', "first_number")
+    second_number = 4 ('./calculator.rb', "second_number")
     difference = get_variable_from_file('./calculator.rb', "difference")
 
     expect(difference).to eq(first_number-second_number)
